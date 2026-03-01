@@ -14,22 +14,22 @@ cask "jira" do
   on_macos do
     on_intel do
       url "https://github.com/iatsiuk/jira-cli/releases/download/v#{version}/jira_#{version}_darwin_amd64.tar.gz"
-      sha256 "b34d2491ee0450960e4747ee06aeb5f424f593f37fe25056591537bae51b8a30"
+      sha256 "000a585c307639ac7b09ac7dd9b0af39993009a9d5058c5ab08cf1f4465c870d"
     end
     on_arm do
       url "https://github.com/iatsiuk/jira-cli/releases/download/v#{version}/jira_#{version}_darwin_arm64.tar.gz"
-      sha256 "779896f76bd110d2f06841dcfd117a000b1a31a220cdc44edbd1b955b5aef706"
+      sha256 "39ffc3bde592c7df4c23aa09e392996a6768174b8f3ec52e96ded115ba41fda2"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/iatsiuk/jira-cli/releases/download/v#{version}/jira_#{version}_linux_amd64.tar.gz"
-      sha256 "a76a52c510e2067e80c952bb98445a23788c7b408ad85f52f55102c1b515a3c9"
+      sha256 "ad955e9cd09fdaef2ad0efe5baeb0c274bd62ecd50955a3fcbae96abba140429"
     end
     on_arm do
       url "https://github.com/iatsiuk/jira-cli/releases/download/v#{version}/jira_#{version}_linux_arm64.tar.gz"
-      sha256 "711e6ea39bd782b0ce4815d62e3cd5e5da33fc9be049260142aec632d1b3aa46"
+      sha256 "397de995902c1b5ca0def0725448f02a4f77e240c728f80721c249c96653edf9"
     end
   end
 
