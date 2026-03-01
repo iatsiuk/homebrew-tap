@@ -3,7 +3,7 @@ cask "jira" do
   name "jira"
   desc "Interactive command-line tool for Jira"
   homepage "https://github.com/iatsiuk/jira-cli"
-  version "1.8.1"
+  version "1.7.0-ad"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "jira" do
   on_macos do
     on_intel do
       url "https://github.com/iatsiuk/jira-cli/releases/download/v#{version}/jira_#{version}_darwin_amd64.tar.gz"
-      sha256 "d0a713103ddf1b1f55b4bdc29c79433ef53ba30fc6e16fe138618bcee3fb1f75"
+      sha256 "b34d2491ee0450960e4747ee06aeb5f424f593f37fe25056591537bae51b8a30"
     end
     on_arm do
       url "https://github.com/iatsiuk/jira-cli/releases/download/v#{version}/jira_#{version}_darwin_arm64.tar.gz"
-      sha256 "fc12224fa51bec2535251b69d8c2017905eadc4567a48d71cd1529062eef8416"
+      sha256 "779896f76bd110d2f06841dcfd117a000b1a31a220cdc44edbd1b955b5aef706"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/iatsiuk/jira-cli/releases/download/v#{version}/jira_#{version}_linux_amd64.tar.gz"
-      sha256 "29c2a70591c2c0e503b2f47814368738144b51b83658ec0f29598ba4d49a5ae8"
+      sha256 "a76a52c510e2067e80c952bb98445a23788c7b408ad85f52f55102c1b515a3c9"
     end
     on_arm do
       url "https://github.com/iatsiuk/jira-cli/releases/download/v#{version}/jira_#{version}_linux_arm64.tar.gz"
-      sha256 "d67f11b5b0565c8d6009b115ad7b76e607fb13ff327b3782b0d014670a496d0c"
+      sha256 "711e6ea39bd782b0ce4815d62e3cd5e5da33fc9be049260142aec632d1b3aa46"
     end
   end
 
