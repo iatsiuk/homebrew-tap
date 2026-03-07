@@ -3,7 +3,7 @@ cask "r-cli" do
   name "r-cli"
   desc "CLI tool for RethinkDB - query, manage, and interact with RethinkDB databases"
   homepage "https://github.com/iatsiuk/r-cli"
-  version "1.0.7"
+  version "1.0.8"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "r-cli" do
   on_macos do
     on_intel do
       url "https://github.com/iatsiuk/r-cli/releases/download/v#{version}/r-cli_#{version}_darwin_amd64.tar.gz"
-      sha256 "0afbfb4887408d047d2ddf8f10e274c7d2e7a4a9ea6cbdf4f51213c0f743f712"
+      sha256 "59feb880d2e5c4cc0dc882e8105f2f4b4b097588b4ead9f67693b4d6df53598f"
     end
     on_arm do
       url "https://github.com/iatsiuk/r-cli/releases/download/v#{version}/r-cli_#{version}_darwin_arm64.tar.gz"
-      sha256 "7ebcb22a25b07e5b697d6dce044253f656c29483f261303f810650e8a2ae3197"
+      sha256 "7c9258c5f8d1e017e8e6fbbd04ffa3187c1edeaf15ce7f3f23d60943749375f3"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/iatsiuk/r-cli/releases/download/v#{version}/r-cli_#{version}_linux_amd64.tar.gz"
-      sha256 "8afccf48f59ce2591de05248d56a23b33bc369b2cf27f4ef15d4f0b994363c02"
+      sha256 "1b0d3621855368c131ad70b619e5faf923d8a2c431b11e7877e185909c0a33c2"
     end
     on_arm do
       url "https://github.com/iatsiuk/r-cli/releases/download/v#{version}/r-cli_#{version}_linux_arm64.tar.gz"
-      sha256 "22d1043e62ba59ab725a09f5941a9b8fe80f06252b2b89e1afaf469465c1817d"
+      sha256 "b974d8429a55048e3c122dd19e827fca0509f17aa5da01e4b53e4c2e49c5cc3d"
     end
   end
 
