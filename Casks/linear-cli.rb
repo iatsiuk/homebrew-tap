@@ -3,7 +3,7 @@ cask "linear-cli" do
   name "linear-cli"
   desc "CLI tool for Linear - manage issues, projects, and teams from the terminal"
   homepage "https://github.com/iatsiuk/linear-cli"
-  version "0.2.0"
+  version "0.2.1"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "linear-cli" do
   on_macos do
     on_intel do
       url "https://github.com/iatsiuk/linear-cli/releases/download/v#{version}/linear-cli_#{version}_darwin_amd64.tar.gz"
-      sha256 "3c785fcc12dd7b20670057b07a015b40cf9de5ab24cb86d6bbaca5b3b73997bc"
+      sha256 "9a9bf426b3690cf6b128f686af06b66b089b47be081655c5cb5792d53dc9dfcb"
     end
     on_arm do
       url "https://github.com/iatsiuk/linear-cli/releases/download/v#{version}/linear-cli_#{version}_darwin_arm64.tar.gz"
-      sha256 "5d0dfc9e888bae7312623a0e278e9447f30d9c412a34a98fc84f136600ccc966"
+      sha256 "bfa39b20c0798faa2b68b35989ac9fc63a9660aff0e015d61ff11cd8607a550f"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/iatsiuk/linear-cli/releases/download/v#{version}/linear-cli_#{version}_linux_amd64.tar.gz"
-      sha256 "1c66a27f790d47db09ca958634e602e73a5a3efa7b032ebbe1c3b2c450a9e370"
+      sha256 "b6c89a43b6fc824275e57e292e4ceaf880d323fcbed3607e7b5f6c3ba02b2543"
     end
     on_arm do
       url "https://github.com/iatsiuk/linear-cli/releases/download/v#{version}/linear-cli_#{version}_linux_arm64.tar.gz"
-      sha256 "c20c4d243e34705dc09e2491e09ceab2212414b5f22b8c06aac3d3e5ecf3c4a6"
+      sha256 "128bb6b1584a675df5883f109cc280cc5335c91fe71012d5319768572ec8f8e6"
     end
   end
 
