@@ -3,7 +3,7 @@ cask "orx" do
   name "orx"
   desc "CLI tool for querying multiple LLMs in parallel via OpenRouter"
   homepage "https://github.com/iatsiuk/orx-cli"
-  version "1.3.2"
+  version "1.3.3"
 
   livecheck do
     skip "Auto-generated on release."
@@ -15,22 +15,22 @@ cask "orx" do
   on_macos do
     on_intel do
       url "https://github.com/iatsiuk/orx-cli/releases/download/v#{version}/orx-cli_#{version}_darwin_amd64.tar.gz"
-      sha256 "6359930de53179c517584fc5f7a362fd09055ce8494005555bb83bf9023196d6"
+      sha256 "5064339c773ab494d1b6cb4abfe419e9ac006a974bfa22d218463b18893808c0"
     end
     on_arm do
       url "https://github.com/iatsiuk/orx-cli/releases/download/v#{version}/orx-cli_#{version}_darwin_arm64.tar.gz"
-      sha256 "55011d43d047dd530cfdd2c62d06aa60d9fee9ae58a2bfdaf0cc2c4496cb865c"
+      sha256 "fbfbcc201a49f92dd51a1820afb6a71af3f7881e6412ff0e15797c203ed9dccd"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/iatsiuk/orx-cli/releases/download/v#{version}/orx-cli_#{version}_linux_amd64.tar.gz"
-      sha256 "27946d0667b0d4a2876f5d460fc2de011398034be342de737ec7b5fd88e3d685"
+      sha256 "81c7f786932b48b9e9d70d38703fb782bbdeb2bef63898868e03c7d4f1e55fda"
     end
     on_arm do
       url "https://github.com/iatsiuk/orx-cli/releases/download/v#{version}/orx-cli_#{version}_linux_arm64.tar.gz"
-      sha256 "14daca16e0becbbcc1f90f6cc392135d75bbeb2203ede66357597edeacc8e76b"
+      sha256 "ce9aa83ae846fb2b3b86a881693ca0db8f60f1c9f2185b99d8ed781f0806fe54"
     end
   end
 
