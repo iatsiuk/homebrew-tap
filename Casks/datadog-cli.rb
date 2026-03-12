@@ -3,7 +3,7 @@ cask "datadog-cli" do
   name "datadog-cli"
   desc "CLI tool for Datadog - query logs, traces, and events from the terminal"
   homepage "https://github.com/iatsiuk/datadog-cli"
-  version "0.5.0"
+  version "0.5.1"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "datadog-cli" do
   on_macos do
     on_intel do
       url "https://github.com/iatsiuk/datadog-cli/releases/download/v#{version}/datadog-cli_#{version}_darwin_amd64.tar.gz"
-      sha256 "55ea20412e56d6321f79bc19046798406ad6b36b70dd8bde3bfd1622e4abdc69"
+      sha256 "428a3fb5c50149553ddac1c017a46d4d4d6556dfce9499569c0aad3c56a5ac4f"
     end
     on_arm do
       url "https://github.com/iatsiuk/datadog-cli/releases/download/v#{version}/datadog-cli_#{version}_darwin_arm64.tar.gz"
-      sha256 "fd08296a8cc525f308600deba2cc4ed4d0cf3a7ac31260b805705b4e6c69711d"
+      sha256 "44efae8619504f4440e2863f19034ffa4b4d670012d282ca6895a5e157addf74"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/iatsiuk/datadog-cli/releases/download/v#{version}/datadog-cli_#{version}_linux_amd64.tar.gz"
-      sha256 "5326a1dae5a3dc969adafe6f75460f0050734b81c4f5e5018e5edd3db1832549"
+      sha256 "31c9ac33f89a193415b5a6b445e3c772d7cb1c42faa2cea4e50f789b8e8ff025"
     end
     on_arm do
       url "https://github.com/iatsiuk/datadog-cli/releases/download/v#{version}/datadog-cli_#{version}_linux_arm64.tar.gz"
-      sha256 "ead70094ebd790efd86a66c5e1746a3dbf6aed9aef98c4b6a754e553c16acc4a"
+      sha256 "a61776b999d2e46e1f583e87a257a4ebee1c1e44bac3d34b45e4ea6c7fb4acf3"
     end
   end
 
