@@ -5,22 +5,22 @@ cask "orx" do
   on_macos do
     on_intel do
       url "https://github.com/iatsiuk/orx-cli/releases/download/v#{version}/orx-cli_#{version}_darwin_amd64.tar.gz"
-      sha256 "251a5079fb535fee17ba08b654ef8fc214842ff74271e15c774ad8360898c6bb"
+      sha256 "32f04d1c12745580271ff19d17ecd3ba434bd1c572511e1e7f649c382b58e8e7"
     end
     on_arm do
       url "https://github.com/iatsiuk/orx-cli/releases/download/v#{version}/orx-cli_#{version}_darwin_arm64.tar.gz"
-      sha256 "115f14f2981d2ec4689d5e084d7d8b051fdce1061ea29d07267d51ce0eb57669"
+      sha256 "20597089427dea776ab425c222461a0d18d4ec8d13f2f99a1e58bd78d9d3f02a"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/iatsiuk/orx-cli/releases/download/v#{version}/orx-cli_#{version}_linux_amd64.tar.gz"
-      sha256 "25caaf0262c0b4c3201490500a7b57d19dd9242c34468453b4347682bb4f0a62"
+      sha256 "dc377341b0c4468eef1d172721bb38dd22d0bb0f1656f02a3d724045f7012b02"
     end
     on_arm do
       url "https://github.com/iatsiuk/orx-cli/releases/download/v#{version}/orx-cli_#{version}_linux_arm64.tar.gz"
-      sha256 "b0e201cf7c37f1c0d2952aea1cb743918d399b629cfef484c5e3e4ada027bae4"
+      sha256 "bde0a15e519eeedd8408c49b6e1271511b4465abab36c7fbb410676d1f40c151"
     end
   end
 
@@ -36,7 +36,7 @@ cask "orx" do
   binary "orx-ralphex-review"
 
   postflight do
-    system_command "/usr/bin/xattr", args: ["-d", "com.apple.quarantine", "#{staged_path}/orx"]
+    system_command "/bin/sh", args: ["-c", "xattr -d com.apple.quarantine '#{staged_path}/orx' 2>/dev/null; true"]
   end
 
   # No zap stanza required
